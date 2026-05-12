@@ -1,4 +1,4 @@
-# 🤖 TRAC-IK 逆运动学求解器 (适配 ROS2 )
+# TRAC-IK 逆运动学求解器 (适配 ROS2 )
 
 [![ROS 2 Humble](https://img.shields.io/badge/ROS2-Humble-blue)](https://docs.ros.org/en/humble/)
 [![Ubuntu 22.04](https://img.shields.io/badge/Ubuntu-22.04-orange.svg)](https://releases.ubuntu.com/22.04/)
@@ -7,7 +7,7 @@
 [![License: Apache 2.0](https://img.shields.io/badge/License-Apache%202.0-green.svg)](https://opensource.org/licenses/Apache-2.0)
 
 ---
-## 🛠️ 为什么换掉默认的 KDL？
+## 为什么换掉默认的 KDL？
 ### 1. 在 MoveIt 中控制机械臂时，经常遇到:
 *  **明明手能勾到的位置，却报 `No IK solution found`**
 *  **机械臂在某个姿态突然“突变”或是规划路径异常曲折**
@@ -20,7 +20,7 @@
 *  工程体验：TRAC-IK 更适合复杂位姿、接近极限、连续 Cartesian IK 和实时遥操作
 ```
 ---
-## 🛠️ 本仓库贡献：ROS 2 适配
+## 本仓库贡献：ROS 2 适配
 
 ### 1. 当前版本TRAC-IK 适配说明
 ```bash
@@ -75,7 +75,7 @@ trac_ik-ros2 已经完成了部分 ROS2 移植，尤其是 trac_ik_lib 核心求
 - 作为本地 IK 库用于实时控制与操作
 ```
 ---
-## 🚀 快速上手
+## 快速上手
 
 ### 1. 首先安装trac运行必要依赖 NLopt
 
@@ -117,7 +117,7 @@ colcon build #编译
 ```
 ---
 
-## 🚀 文件详解
+## 文件详解
 ### TRAC-IK 说明
 #### 1. trac_ik: 这是元包，只负责聚合其他几个包，本身不提供 IK 求解功能，也不生成可执行程序。
 #### 2. trac_ik_lib: 核心 IK 求解库，也是最重要的包。负责真正的逆运动学计算，支持多种求解策略：
@@ -150,7 +150,7 @@ colcon build #编译
 - `trac_ik_python`：Python 包装层
 
 ---
-## 🤝 贡献与反馈
+## 贡献与反馈
 
 如果你觉得这个 ROS 2 适配版帮到了你，请点一个 **⭐ Star**！
 如果在其他机械臂上遇到问题，欢迎提交 **Issue**。
